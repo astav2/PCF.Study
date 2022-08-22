@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+  <control namespace="dksk" constructor="SPL" version="0.0.38" display-name-key="SPL" description-key="SPL description" control-type="standard" preview-image="img/preview.png">
+    <data-set name="sampleDataSet" display-name-key="Dataset_Display_Key">
+    </data-set>
+    <resources>
+      <code path="index.ts" order="1" />
+      <css path="css/SPL.css" order="1" />
+      <resx path="strings/SPL.1033.resx" version="1.0.0" />
+    </resources>
+    <feature-usage>
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+  </control>
+</manifest>

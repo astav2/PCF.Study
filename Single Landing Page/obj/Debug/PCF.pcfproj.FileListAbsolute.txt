@@ -1,0 +1,2 @@
+C:\PCF\obj\Debug\PCF.pcfproj.AssemblyReference.cache
+C:\PCF\obj\Debug\PCF.pcfproj.CoreCompileInputs.cache
