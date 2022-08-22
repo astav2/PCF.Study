@@ -10,7 +10,7 @@
     "refreshTypes": "pcf-scripts refreshTypes"
   },
   "dependencies": {
-    "@fluentui/react": "^8.89.0",
+    "@fluentui/react": "^8.90.1",
     "office-ui-fabric-react": "^7.193.0"
   },
   "devDependencies": {

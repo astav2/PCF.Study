@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <manifest>
-  <control namespace="dksk" constructor="SPL" version="0.0.38" display-name-key="SPL" description-key="SPL description" control-type="standard" preview-image="img/preview.png" api-version="1.3.4">
+  <control namespace="dksk" constructor="SPL" version="0.0.40" display-name-key="SPL" description-key="SPL description" control-type="standard" preview-image="img/preview.png" api-version="1.3.4">
     <data-set name="sampleDataSet" display-name-key="Dataset_Display_Key"/>
     <resources>
       <code path="bundle.js" order="1"/>

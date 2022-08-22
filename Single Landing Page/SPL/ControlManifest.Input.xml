@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest>
-  <control namespace="dksk" constructor="SPL" version="0.0.38" display-name-key="SPL" description-key="SPL description" control-type="standard" preview-image="img/preview.png">
+  <control namespace="dksk" constructor="SPL" version="0.0.40" display-name-key="SPL" description-key="SPL description" control-type="standard" preview-image="img/preview.png">
     <data-set name="sampleDataSet" display-name-key="Dataset_Display_Key">
     </data-set>
     <resources>
