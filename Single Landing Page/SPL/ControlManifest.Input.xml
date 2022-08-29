@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest>
-  <control namespace="dksk" constructor="SPL" version="0.0.40" display-name-key="SPL" description-key="SPL description" control-type="standard" preview-image="img/preview.png">
+  <control namespace="dksk" constructor="SPL" version="0.0.50" display-name-key="SPL" description-key="SPL description" control-type="standard" preview-image="img/preview.png">
     <data-set name="sampleDataSet" display-name-key="Dataset_Display_Key">
     </data-set>
     <resources>
@@ -12,5 +12,6 @@
       <uses-feature name="Utility" required="true" />
       <uses-feature name="WebAPI" required="true" />
     </feature-usage>
+    <property name="icon" display-name-key="React Fluent UI Icon" description-key="ref: https://developer.microsoft.com/en-us/fluentui#/styles/web/icons" usage="input" required="false" of-type="SingleLine.Text" />
   </control>
 </manifest>

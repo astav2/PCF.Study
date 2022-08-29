@@ -1,5 +1,5 @@
 import * as React from "react";
-import {useState} from 'react';
+import { useState } from 'react';
 import { IInputs, IOutputs } from "../generated/ManifestTypes";
 import {
     DetailsList,
@@ -9,10 +9,11 @@ import {
 import { useBoolean, useId } from '@fluentui/react-hooks';
 import { MarqueeSelection } from "office-ui-fabric-react/lib/MarqueeSelection";
 import { Fabric } from "office-ui-fabric-react/lib/Fabric";
-import { Link, IIconProps } from '@fluentui/react';
-import { IconButton } from "office-ui-fabric-react"
-import { DefaultButton, IButtonProps } from '@fluentui/react/lib/Button';;
+import { IIconProps } from '@fluentui/react';
+import { IconButton } from '@fluentui/react/lib/Button';
 import { TeachingBubble } from '@fluentui/react/lib/TeachingBubble';
+import { ScrollablePane, ScrollbarVisibility } from 'office-ui-fabric-react';
+
 export interface IDetailsListBasicExampleItem {
     key: number;
     name: string;
@@ -23,7 +24,7 @@ export interface IDetailsListBasicExampleState {
     items: any;
 }
 
-
+//const emojiIcon: IIconProps = { iconName: 'CaretRightSolid8' };
 
 export class DetailsListGrid extends React.Component<
     any,
@@ -32,7 +33,7 @@ export class DetailsListGrid extends React.Component<
 
     private _selection: Selection;
 
-    
+
     private _allItems: any = this.props.pageRows;
 
     private _columns: any = this.props.mappedcolumns;
@@ -44,15 +45,12 @@ export class DetailsListGrid extends React.Component<
     constructor(props: {}) {
 
         super(props);
-       
+
         this._selection = new Selection({
 
             onSelectionChanged: () => {
-
                 // @ts-ignore
-
                 this.onRowSelection(this._selection._anchoredIndex);
-
             }
 
         });
@@ -60,40 +58,34 @@ export class DetailsListGrid extends React.Component<
         // Populate with items for demos.
 
         this.state = {
-
             items: this._allItems
-
         };
 
     }
 
     public render(): JSX.Element {
-
         const { items } = this.state;
-
         return (
+            <>
 
-            <Fabric>
-
-                <MarqueeSelection selection={this._selection}>
-
-                    <DetailsList
-                        items={items}
-                        columns={this._columns}
-                        setKey="set"
-                        layoutMode={DetailsListLayoutMode.justified}
-                        selection={this._selection}
-                        selectionPreservedOnEmptyClick={true}
-                        ariaLabelForSelectionColumn="Toggle selection"
-                        ariaLabelForSelectAllCheckbox="Toggle selection for all items"
-                        checkButtonAriaLabel="Row checkbox"
-                        onItemInvoked={this._onItemInvoked}
-                        onRenderItemColumn={this._onRenderItemColumn.bind(this)}
-                    />
-
-                </MarqueeSelection>
-
-            </Fabric>
+                <ScrollablePane scrollbarVisibility={ScrollbarVisibility.auto}  >
+                <h1 style={{textAlign:'center'}}>Single Landing Page PCF Grid</h1>
+                <DetailsList
+                    items={items}
+                    columns={this._columns}
+                    setKey="set"
+                    layoutMode={DetailsListLayoutMode.justified}
+                    selection={this._selection}
+                    selectionPreservedOnEmptyClick={true}
+                    ariaLabelForSelectionColumn="Toggle selection"
+                    ariaLabelForSelectAllCheckbox="Toggle selection for all items"
+                    checkButtonAriaLabel="Row checkbox"
+                    onItemInvoked={this._onItemInvoked}
+                    onRenderItemColumn={this._onRenderItemColumn.bind(this)}
+                />
+                {/* <h1>The Single Landing Page</h1> */}
+                </ScrollablePane>
+            </>
 
         );
 
@@ -103,41 +95,28 @@ export class DetailsListGrid extends React.Component<
     private onRowSelection = (rowIndex: number) => {
 
         let functionName: string = "onRowSelection";
-
         let selectedRowId: string;
-
         let selectedCardIndex: number;
-
         try {
 
             selectedRowId = this.props.pageRows[rowIndex].key;
-
             // check if selected row is alrady seelected
-
             selectedCardIndex = this._allSelectedCards.findIndex((element: any) => {
-
                 return element == selectedRowId;
-
             });
 
             // if card is already clicked remove card id
-
             if (selectedCardIndex >= 0) {
-
                 this._allSelectedCards.splice(selectedCardIndex, 1);
 
             } else {
-
                 // store all selected card in array
-
                 this._allSelectedCards.push(selectedRowId);
 
             }
 
             // update ribbon bar
-
             this._pcfContext.parameters.sampleDataSet.setSelectedRecordIds(
-
                 this._allSelectedCards
 
             );
@@ -162,6 +141,8 @@ export class DetailsListGrid extends React.Component<
 
 
 
+
+
     private openEntityRecord(recordID: any): void {
 
         let functionName: string = "onCardDoubleClick";
@@ -169,19 +150,14 @@ export class DetailsListGrid extends React.Component<
         try {
 
             if (recordID != null || recordID != undefined) {
-
                 let entityreference = this._pcfContext.parameters.sampleDataSet.records[
-
                     recordID
 
                 ].getNamedReference();
 
                 let entityFormOptions = {
-
                     entityName: entityreference.LogicalName,
-
                     entityId: entityreference.id
-
                 };
 
                 /** Using navigation method */
@@ -191,11 +167,8 @@ export class DetailsListGrid extends React.Component<
                     .then((success: any) => {
                         console.log(success);
                     })
-
                     .catch((error: any) => {
-
                         console.log(error);
-
                     });
 
             }
@@ -207,54 +180,21 @@ export class DetailsListGrid extends React.Component<
         }
 
     };
-    private  _onRenderItemColumn(item: any, index: number | any, column: IColumn | any): JSX.Element {
+    private _onRenderItemColumn(item: any, index: number | any, column: IColumn | any): JSX.Element {
         console.log(item);
         if (column.fieldName === 'Expand') {
-            var buttonId = useId();   
+            var buttonId = useId();
             return (<div>
                 {
                     <TeachingBubbleBasicExample buttonid={buttonId}
-                    pcfContext={this._pcfContext}
-                    id={item.key}
+                        pcfContext={this._pcfContext}
+                        id={item.key}
                     />
                 }
             </div>);
-           
         }
         return item[column.fieldName];
     };
-
-  
-
-    private getData = (key:string):any => {         
-        var req = new XMLHttpRequest();
-            req.open("GET",  `https://org49252038.crm.dynamics.com/api/data/v9.2/accounts(${key})?$select=name,accountnumber,address1_composite`, false);
-            req.setRequestHeader("OData-MaxVersion", "4.0");
-            req.setRequestHeader("OData-Version", "4.0");
-            req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
-            req.setRequestHeader("Accept", "application/json");
-            req.setRequestHeader("Prefer", "odata.include-annotations=*");
-            req.onreadystatechange = function () {
-                if (this.readyState === 4) {
-                    req.onreadystatechange = null;
-                    if (this.status === 200) {
-                        var result = JSON.parse(this.response);
-                        console.log(result);
-                        // Columns
-                        var accountid = result["accountid"]; // Guid
-                        var name = result["name"]; // Text
-                        var accountnumber = result["accountnumber"]; // Text
-                        var address1_composite = result["address1_composite"]; // Multiline Text
-                     var   itemdetail = { accountid: accountid, name: name, accountnumber: accountnumber, address1_composite: address1_composite };
-                     return itemdetail;
-                      
-                    } else {
-                        console.log(this.responseText);
-                    }
-                }
-            };
-            req.send();          
-    }
 
 
 }
@@ -263,51 +203,90 @@ export class DetailsListGrid extends React.Component<
 
 const TeachingBubbleBasicExample = (props: any): JSX.Element => {
     const buttonId: string = props.buttonid;
-    const id= props.id;
-    let _pcfContext:ComponentFramework.Context<IInputs> = props.pcfContext;
-   // const { accountid, name, accountnumber, address1_composite } =props.details;
+    const id = props.id;
+    let _pcfContext: ComponentFramework.Context<IInputs> = props.pcfContext;
+    // const { accountid, name, accountnumber, address1_composite } =props.details;
     //  { accountid: "abc", name: "abc", accountnumber: "abc", address1_composite: "abc" };
-    var   itemdetail ={};
-    const [teachingBubbleVisible, { toggle: toggleTeachingBubbleVisible }] = useBoolean(false);
-    const [data, setData]= useState({accountid: "", name: "", accountnumber: "", address1_composite: ""});
-    const [showBubble, setShowBubble]= useState(false);
-    const [isLoading, setIsLoading] = useState(false);
-    const [err, setErr]=useState('');
-    const onClose= ()=>setShowBubble(!showBubble);
-    const handleClick:any=async ()=>{
-        setIsLoading(true);
-        try{
-           var result= await _pcfContext.webAPI.retrieveRecord("account",id, "?$select=name,accountnumber,address1_composite")
-           var accountid = result["accountid"]; // Guid
-           var name = result["name"]; // Text
-           var accountnumber = result["accountnumber"]; // Text
-           var address1_composite = result["address1_composite"]; // Multiline Text
-           var   itemdetail = { accountid: accountid, name: name, accountnumber: accountnumber, address1_composite: address1_composite };
-          // var   itemdetail =  { accountid: "abc", name: "abc", accountnumber: "abc", address1_composite: "abc" };
-           setData(itemdetail);
-           setShowBubble(true);
+    var itemdetail = {};
+    const _getBubbleStyles = () => {
+        return {
+            closeButton: {
+                color: 'red',
+                selectors: {
+                    ':hover': {
+                        background: 'gainsboro',
+                        color: 'red'
+                    },
+                    ':active': {
+                        background: 'darkGray',
+                        color: 'red'
+                    }
+                }
+            },
+            content: {
+                border: '1px solid black',
+                background: 'white',
+            },
+            headline: {
+                color: 'black'
+            },
+            subText: {
+                color: 'black'
+            }
         }
-        catch (err:any) {
+    }
+    const [teachingBubbleVisible, { toggle: toggleTeachingBubbleVisible }] = useBoolean(false);
+    const [data, setData] = useState({ accountid: "", name: "", accountnumber: "", address1_composite: "" });
+    const [showBubble, setShowBubble] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
+    const [_iconname, setIconName] = useState(_pcfContext.parameters.icon.raw?.toLocaleLowerCase().includes('val') ? "Settings" : _pcfContext.parameters.icon.raw?.toString());
+    const [err, setErr] = useState('');
+    const onClose = () => setShowBubble(!showBubble);
+    const handleClicktest: any = () => {
+        var itemdetail = { accountid: "abc", name: "abc", accountnumber: "abc", address1_composite: "abc" };
+        setData(itemdetail);
+        setShowBubble(true);
+    }
+    const handleClick: any = async () => {
+        setIsLoading(true);
+        try {
+            var result = await _pcfContext.webAPI.retrieveRecord("account", id, "?$select=name,accountnumber,address1_composite")
+            var accountid = result["accountid"]; // Guid
+            var name = result["name"]; // Text
+            var accountnumber = result["accountnumber"]; // Text
+            var address1_composite = result["address1_composite"]; // Multiline Text
+            var itemdetail = { accountid: accountid, name: name, accountnumber: accountnumber, address1_composite: address1_composite };
+            // var   itemdetail =  { accountid: "abc", name: "abc", accountnumber: "abc", address1_composite: "abc" };
+            setData(itemdetail);
+            setShowBubble(true);
+        }
+        catch (err: any) {
             setErr(err.message);
-          } finally {
+        } finally {
             setIsLoading(false);
-          }
+        }
     }
     return (
         <div>
-            <DefaultButton
+            {/* <DefaultButton
                 id={buttonId}
                 onClick={handleClick}
-                text={teachingBubbleVisible ? 'Hide Details' : 'Show Details'}
-            />
-
+                text={showBubble ? 'Hide Details' : 'Show Details'}
+            /> */}
+            <IconButton iconProps={{ iconName: _iconname }}
+                title={showBubble ? 'Hide Details' : 'Show Details'}
+                ariaLabel={showBubble ? 'Hide Details' : 'Show Details'}
+                onClick={handleClick}
+                id={buttonId}
+                checked={showBubble} />
             {!isLoading && showBubble && (
                 <TeachingBubble
                     target={`#${buttonId}`}
                     onDismiss={onClose}
-                    headline="Account Details"
+                    headline={`${data.name} Details`}
                     hasCloseButton={true}
                     closeButtonAriaLabel="Close"
+                    styles={_getBubbleStyles}
                 >
 
                     <label>Id :{data.accountid}</label><br />

@@ -1,2 +1,4 @@
 C:\PCF\obj\Debug\PCF.pcfproj.AssemblyReference.cache
 C:\PCF\obj\Debug\PCF.pcfproj.CoreCompileInputs.cache
+C:\Users\sivakumard\Documents\GitHub\PCF.Study\Single Landing Page\obj\Debug\PCF.pcfproj.AssemblyReference.cache
+C:\Users\sivakumard\Documents\GitHub\PCF.Study\Single Landing Page\obj\Debug\PCF.pcfproj.CoreCompileInputs.cache
