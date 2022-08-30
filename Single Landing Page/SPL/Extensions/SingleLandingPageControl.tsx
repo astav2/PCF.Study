@@ -16,9 +16,7 @@ export class SLPControl extends React.Component<ISlpProps> {
     constructor(props: ISlpProps) {
         super(props);
         this.state={}
-        let functionName: string = "updateView";    
-       
-
+        let functionName: string = "updateView";
     }
     public context:ComponentFramework.Context<IInputs>;
     private appProps: any;
@@ -68,11 +66,8 @@ export class SLPControl extends React.Component<ISlpProps> {
         let functionName = 'mapCRMColumnsToDetailsListColmns';
         let mappedColumn = []
         try {
-
             // loop thorugh all columns
-
             for (const pointer in columnsOnView) {
-
                 mappedColumn.push({
                     key: pointer,
                     name: columnsOnView[pointer].displayName,
@@ -106,12 +101,10 @@ export class SLPControl extends React.Component<ISlpProps> {
         } catch (error) {
             console.log(functionName + " " + error);
         }
-
         return mappedColumn;
 
     }
-    render(): React.ReactNode {
-        
+    render(): React.ReactNode {        
         //all columns which are on views(Eg Active account)
         try {
             let columnsOnView = this.props.context.parameters.sampleDataSet.columns;

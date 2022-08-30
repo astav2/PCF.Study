@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+  <control namespace="dksk" constructor="Count" version="0.0.2" display-name-key="Count " description-key="display the no of characters it can hold more. " control-type="standard" preview-image="img/preview.png">
+    <property name="fieldValue" display-name-key="field_Value" description-key="Property_Desc_Key" usage="bound" required="true" of-type-group="TextGroup" />
+    <resources>
+      <code path="index.ts" order="1" />
+      <css path="css/Count.css" order="1" />
+      <resx path="strings/Count.1033.resx" version="1.0.0" />
+    </resources>
+    <type-group name="TextGroup">
+      <type>SingleLine.Text</type>
+      <type>SingleLine.Phone</type>
+      <type>SingleLine.Email</type>
+      <type>SingleLine.TextArea</type>
+      <type>SingleLine.URL</type>
+    </type-group>
+  </control>
+</manifest>

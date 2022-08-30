@@ -67,7 +67,6 @@ export class DetailsListGrid extends React.Component<
         const { items } = this.state;
         return (
             <>
-
                 <ScrollablePane scrollbarVisibility={ScrollbarVisibility.auto}  >
                 <h1 style={{textAlign:'center'}}>Single Landing Page PCF Grid</h1>
                 <DetailsList
@@ -86,82 +85,57 @@ export class DetailsListGrid extends React.Component<
                 {/* <h1>The Single Landing Page</h1> */}
                 </ScrollablePane>
             </>
-
         );
 
     }
 
 
     private onRowSelection = (rowIndex: number) => {
-
         let functionName: string = "onRowSelection";
         let selectedRowId: string;
         let selectedCardIndex: number;
         try {
-
             selectedRowId = this.props.pageRows[rowIndex].key;
             // check if selected row is alrady seelected
             selectedCardIndex = this._allSelectedCards.findIndex((element: any) => {
                 return element == selectedRowId;
             });
-
             // if card is already clicked remove card id
             if (selectedCardIndex >= 0) {
                 this._allSelectedCards.splice(selectedCardIndex, 1);
-
             } else {
                 // store all selected card in array
                 this._allSelectedCards.push(selectedRowId);
-
             }
 
             // update ribbon bar
             this._pcfContext.parameters.sampleDataSet.setSelectedRecordIds(
                 this._allSelectedCards
-
             );
-
         } catch (error) {
-
             console.log(functionName + "" + error);
-
         }
 
     };
 
-
-
     private _onItemInvoked = (item: IDetailsListBasicExampleItem): void => {
-
         // function to open entity record
-
-        this.openEntityRecord(item.key);
+                this.openEntityRecord(item.key);
 
     };
 
-
-
-
-
     private openEntityRecord(recordID: any): void {
-
         let functionName: string = "onCardDoubleClick";
-
         try {
-
             if (recordID != null || recordID != undefined) {
                 let entityreference = this._pcfContext.parameters.sampleDataSet.records[
                     recordID
-
                 ].getNamedReference();
-
                 let entityFormOptions = {
                     entityName: entityreference.LogicalName,
                     entityId: entityreference.id
                 };
-
                 /** Using navigation method */
-
                 this._pcfContext.navigation
                     .openForm(entityFormOptions)
                     .then((success: any) => {
@@ -170,13 +144,10 @@ export class DetailsListGrid extends React.Component<
                     .catch((error: any) => {
                         console.log(error);
                     });
-
             }
 
         } catch (error) {
-
             console.log(functionName + "" + error);
-
         }
 
     };
