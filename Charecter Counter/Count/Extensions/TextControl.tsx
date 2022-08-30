@@ -16,51 +16,7 @@ export class TextControl extends React.Component<ITextControl, { value: string }
             value: this.props.labelText
         };
     }
-
-    private getStyle = () => {
-        return {
-            borderColor: "transparent",
-            borderStyle: "solid",
-            borderWidth: "1px",
-            boxSizing: "border-box",
-            color: "#000000",
-            fontSize: "1.00rem",
-            fontWeight: 600,
-            height: "2.50rem",
-            lineHeight: "2.50rem",
-            marginLeft: "0px",
-            marginRight: "0px",
-            paddingBottom: "0px",
-            paddingLeft: "0.5rem",
-            paddingRight: "0.5rem",
-            paddingTop: "0px",
-            textOverflow: "ellipsis",
-            width: "100%",
-            selectors: {
-                ':hover': {
-                    backgroundColor: "#FFFFFF",
-                    borderColor: "#666666",
-                    borderStyle: "solid",
-                    borderWidth: "1px",
-                    boxSizing: "border-box",
-                    color: "#000000",
-                    fontSize: "1.00rem",
-                    fontWeight: 400,
-                    height: "2.50rem",
-                    lineHeight: "2.50rem",
-                    marginLeft: "0px",
-                    marginRight: "0px",
-                    paddingBottom: "0px",
-                    paddingLeft: "0.5rem",
-                    paddingRight: "0.5rem",
-                    paddingTop: "0px",
-                    textOverflow: "ellipsis",
-                    width: "100%"
-                }
-            }
-        }
-
-    }
+    
     private onChange = (event: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>, newValue?: string | undefined) => {
         if (!newValue) {
 
