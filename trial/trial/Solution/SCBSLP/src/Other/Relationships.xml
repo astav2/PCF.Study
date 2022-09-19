@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="business_unit_scbslp_landingpage" />
+  <EntityRelationship Name="business_unit_scbslp_landingpageconfig" />
+  <EntityRelationship Name="lk_scbslp_landingpage_createdby" />
+  <EntityRelationship Name="lk_scbslp_landingpage_modifiedby" />
+  <EntityRelationship Name="lk_scbslp_landingpageconfig_createdby" />
+  <EntityRelationship Name="lk_scbslp_landingpageconfig_modifiedby" />
+  <EntityRelationship Name="owner_scbslp_landingpage" />
+  <EntityRelationship Name="owner_scbslp_landingpageconfig" />
+  <EntityRelationship Name="team_scbslp_landingpage" />
+  <EntityRelationship Name="team_scbslp_landingpageconfig" />
+  <EntityRelationship Name="user_scbslp_landingpage" />
+  <EntityRelationship Name="user_scbslp_landingpageconfig" />
+</EntityRelationships>

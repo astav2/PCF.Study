@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{a8fef292-cd32-ed11-9db1-000d3a8567e8}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{f40450b5-b450-47eb-b7e0-221e4572ff8a}" IsUserDefined="1" name="Meetings_tasks" visible="true" labelid="{c7b1309b-a7ac-4782-a426-8dfd81d16bab}">
+          <labels>
+            <label description="Meetings &amp; Tasks" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{e09e299c-4298-4d17-a26a-30d6653d0a45}" labelid="{66f3051c-bda9-4a19-8375-6666c06e854f}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{91d3144a-116b-44a8-ad41-e6269609d4ce}" userspacer="true" showlabel="false" colspan="1" rowspan="1" labelid="{05c2fc60-5d98-4631-b4e0-901220a026b8}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{75e447b9-4069-4576-a9cf-f4dcc2eb01a8}" showlabel="false" labelid="{5efd0099-5633-4214-94c1-b6e68d6f3384}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="scbslp_name" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="scbslp_name" uniqueid="{B65AB67E-5A2D-40E1-B483-B205DB713354}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c67b1d72-d161-4e0d-a43a-9a4cb08bf2f0}" visible="false" labelid="{34e01d06-7bd7-4a9f-b0ea-4c30a3df2082}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{413d3bcf-39db-4029-bc7d-8e3dc8c7d65c}" userspacer="true" showlabel="false" colspan="1" rowspan="1" labelid="{c71fb2e3-59de-46b3-b2c8-3f873eae3d93}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c54a8b61-3146-4e65-a0ce-62711ca1e6da}" locklevel="0" colspan="1" rowspan="1" showlabel="false" labelid="{7d2a2d44-88c8-4d8b-95fc-c71bd4f575d2}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="scbslp_name" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="scbslp_name" disabled="false" uniqueid="{78578CA5-7641-4FC8-BBE0-B53F68AC8428}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{df846821-fcfb-4830-ae67-747ffb7ed056}" userspacer="true" showlabel="false" colspan="1" rowspan="1" labelid="{977d6d35-ea88-4444-b206-fbe13238584c}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b356c8d3-2b81-4e42-b1e3-abe0994586ec}" locklevel="0" colspan="1" rowspan="1" showlabel="false" labelid="{58e3bf4b-ec66-4b52-894d-c673c334afe4}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="scbslp_name" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="scbslp_name" disabled="false" uniqueid="{4DF92547-A2B2-4FBE-8153-C7A63087BBC3}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="news_insights" id="93d07e0c-2e54-4fd8-bf6f-a41d793c24a5" IsUserDefined="0" locklevel="0" showlabel="true" labelid="{650e0504-c0db-47a1-b338-cc0ca245110f}">
+          <labels>
+            <label description="News &amp; Insights" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_3_section_1" id="86eadb4c-8265-45fa-bb29-d8a0fd366828" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115" labelid="{453d5e9f-8119-4159-85ac-f7fd7d0038ac}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows />
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="portfolio_overview" id="f9b4b0e2-084c-4b57-87ae-d10d7217cc1f" IsUserDefined="0" locklevel="0" showlabel="true" labelid="{191c56e6-4aba-4268-a95a-8c2f166e9eed}">
+          <labels>
+            <label description="Portfolio Overview" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_4_section_1" id="68f6e4ac-63d4-4116-a126-eea155f0550d" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115" labelid="{cd3ac7d3-609d-492d-859a-120e23312e27}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows />
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="my_widgets" id="c8819fd1-79da-478b-8b65-0300d11a5956" IsUserDefined="0" locklevel="0" showlabel="true" labelid="{901bcc05-3f80-4765-88ae-e92376173e8a}">
+          <labels>
+            <label description="My Widgets" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_2_section_1" id="6d04d0f1-e48a-4104-ba95-3d97be2a4c97" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115" labelid="{ef90d2dd-f844-42bd-96f8-e8fdd673927b}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows />
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{00bab0fe-9c6c-4f00-8d5b-e3b263a74ef8}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows></rows>
+      </header>
+      <footer id="{ce83a939-3320-4437-8fbf-d40d9779e6fa}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows></rows>
+      </footer>
+      <DisplayConditions FallbackForm="true" Order="1">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+      <controlDescriptions>
+        <controlDescription forControl="{B65AB67E-5A2D-40E1-B483-B205DB713354}">
+          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>scbslp_name</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="scbslp_pcf01.pcf01">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">scbslp_name</sampleProperty>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="scbslp_pcf01.pcf01">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">scbslp_name</sampleProperty>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="scbslp_pcf01.pcf01">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">scbslp_name</sampleProperty>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{4DF92547-A2B2-4FBE-8153-C7A63087BBC3}">
+          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>scbslp_name</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="scbslp_PCF03.PCF03">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">scbslp_name</sampleProperty>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="scbslp_PCF03.PCF03">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">scbslp_name</sampleProperty>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="scbslp_PCF03.PCF03">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">scbslp_name</sampleProperty>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{78578CA5-7641-4FC8-BBE0-B53F68AC8428}">
+          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>scbslp_name</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="scbslp_PCF02.PCF02">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">scbslp_name</sampleProperty>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="scbslp_PCF02.PCF02">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">scbslp_name</sampleProperty>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="scbslp_PCF02.PCF02">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">scbslp_name</sampleProperty>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Relationship Manager" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

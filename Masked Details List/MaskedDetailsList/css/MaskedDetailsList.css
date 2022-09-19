@@ -1,0 +1,6 @@
+div[id^="ViewSelector"]{
+    z-index: 20;
+}
+#__flyoutRootNode .flexbox {
+    z-index: 20;
+}

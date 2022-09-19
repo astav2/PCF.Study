@@ -41,7 +41,6 @@ export class SLPControl extends React.Component<ISlpProps> {
         let functionName = 'loadPagingRecords';
         let pagingDataRows: any = [];
         let currentPageRecordsID = gridParam.sortedRecordIds;
-
         try {
 
             for (const pointer in currentPageRecordsID) {

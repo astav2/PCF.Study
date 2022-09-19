@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{6211b29f-d032-ed11-9db1-000d3a8567e8}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{f40450b5-b450-47eb-b7e0-221e4572ff8a}" IsUserDefined="1" name="Meetings_tasks" visible="true" labelid="{50465a99-fd69-4a81-bf6e-b52464b37360}">
+          <labels>
+            <label description="Meetings &amp; Tasks" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{e09e299c-4298-4d17-a26a-30d6653d0a45}" labelid="{15628aaf-7e04-4884-bed6-c36416a1e9a7}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{91d3144a-116b-44a8-ad41-e6269609d4ce}" userspacer="true" showlabel="false" colspan="1" rowspan="1" labelid="{6acc1093-9194-4fb1-8fc3-11bbff4114ba}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{75e447b9-4069-4576-a9cf-f4dcc2eb01a8}" showlabel="false" labelid="{1830824b-dc4f-4a51-a396-7c413e2a6348}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="scbslp_name" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="scbslp_name" uniqueid="{b65ab67e-5a2d-40e1-b483-b205db713354}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c67b1d72-d161-4e0d-a43a-9a4cb08bf2f0}" visible="false" labelid="{f75ceb52-0a48-4848-9168-90989a702f62}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{413d3bcf-39db-4029-bc7d-8e3dc8c7d65c}" userspacer="true" showlabel="false" colspan="1" rowspan="1" labelid="{659222bd-67c7-4c0d-994c-a892fc549d92}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c54a8b61-3146-4e65-a0ce-62711ca1e6da}" locklevel="0" colspan="1" rowspan="1" showlabel="false" labelid="{52c8c23c-ba4d-4821-9855-541f9c5cf202}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="scbslp_name" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="scbslp_name" disabled="false" uniqueid="{78578ca5-7641-4fc8-bbe0-b53f68ac8428}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{df846821-fcfb-4830-ae67-747ffb7ed056}" userspacer="true" showlabel="false" colspan="1" rowspan="1" labelid="{332f7687-dd09-40cd-a8cf-2ee4808e5777}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b356c8d3-2b81-4e42-b1e3-abe0994586ec}" locklevel="0" colspan="1" rowspan="1" showlabel="false" labelid="{cc2f685f-da4c-46c2-aba2-81634199d161}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="scbslp_name" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="scbslp_name" disabled="false" uniqueid="{4df92547-a2b2-4fbe-8153-c7a63087bbc3}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="Meetings_tasks_section_3" id="72dc8c4d-6105-4460-a206-e61c15a5c572" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="iFrame" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{9a62c888-974d-4397-9b91-8ca855d7e2c3}" showlabel="false" rowspan="12" colspan="1">
+                        <labels>
+                          <label description="New Iframe control 1663138601237" languagecode="1033" />
+                        </labels>
+                        <control id="IFRAME_new_1" classid="{FD2A7985-3187-444E-908D-6624B21F69C0}">
+                          <parameters>
+                            <PassParameters>false</PassParameters>
+                            <Security>false</Security>
+                            <Scrolling>auto</Scrolling>
+                            <Border>true</Border>
+                            <Url>http://www.smh.com.au</Url>
+                          </parameters>
+                        </control>
+                        <events>
+                          <event name="onload" application="false" active="false" />
+                        </events>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="news_insights" id="93d07e0c-2e54-4fd8-bf6f-a41d793c24a5" IsUserDefined="0" locklevel="0" showlabel="true" labelid="{6ced60a3-73d8-4a9a-a1ac-a60c1c68b6ae}">
+          <labels>
+            <label description="News &amp; Insights" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_3_section_1" id="86eadb4c-8265-45fa-bb29-d8a0fd366828" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115" labelid="{90ceb966-4104-49ea-8160-205d3e9a5f81}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="false" locklevel="0" id="{101576be-20da-45ad-9f84-b8bffc7107a3}" labelid="{96c4e82d-4a62-4020-a873-68884b323b23}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="portfolio_overview" id="f9b4b0e2-084c-4b57-87ae-d10d7217cc1f" IsUserDefined="0" locklevel="0" showlabel="true" labelid="{e2720062-03aa-4a5c-87a2-c25984b3ac95}">
+          <labels>
+            <label description="Portfolio Overview" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_4_section_1" id="68f6e4ac-63d4-4116-a126-eea155f0550d" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115" labelid="{d51f0452-52a0-453a-9005-1fdae0a48672}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="false" locklevel="0" id="{bb0264b1-9bdc-476d-b0b1-1e78c9536c58}" labelid="{ba6caa71-6562-44f1-9682-34566a743a9a}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="my_widgets" id="c8819fd1-79da-478b-8b65-0300d11a5956" IsUserDefined="0" locklevel="0" showlabel="true" labelid="{8272b070-4e43-45d8-aca6-7b822377baa2}">
+          <labels>
+            <label description="My Widgets" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_2_section_1" id="6d04d0f1-e48a-4104-ba95-3d97be2a4c97" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115" labelid="{6de2efab-1947-4c0e-ad93-2dd85fecb7cf}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="false" locklevel="0" id="{c261cfdf-b099-43a9-8ad8-4e32624ea615}" labelid="{ad171ad1-25ec-429d-9aca-22d21e2960a3}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{00bab0fe-9c6c-4f00-8d5b-e3b263a74ef8}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{228d716f-c380-4ce9-afd1-825ebd712768}" showlabel="false" labelid="{7bf89f9a-dacb-4422-b33e-c1ca398bb6de}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{e987c94d-68f9-4a02-97ee-9f2d1b0bb095}" showlabel="false" labelid="{41f356a4-0044-4a55-b4e2-617e287d2bf3}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{351f7c10-d557-4380-a76b-9c819d8cfa2b}" showlabel="false" labelid="{0dd2de83-9b4e-48da-88b8-9e539f6881a0}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{ce83a939-3320-4437-8fbf-d40d9779e6fa}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{6c39a7f8-d376-4dc5-96dd-febe73b0a8df}" showlabel="false" labelid="{7f67d892-1a0a-471c-b584-0f9c3f278921}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{039361ac-4db8-4d5b-9935-8ebf80bf4247}" showlabel="false" labelid="{3636a7ad-3154-4ffb-841c-99a32ff0f0d8}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{920310b4-3044-434e-87aa-096192a86adb}" showlabel="false" labelid="{c294cb74-17e8-4e69-9aa9-fdc36b778e67}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="2" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+      <controlDescriptions>
+        <controlDescription forControl="{b65ab67e-5a2d-40e1-b483-b205db713354}">
+          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>scbslp_name</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="scbslp_pcf01.pcf01">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">scbslp_name</sampleProperty>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="scbslp_pcf01.pcf01">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">scbslp_name</sampleProperty>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="scbslp_pcf01.pcf01">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">scbslp_name</sampleProperty>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{4df92547-a2b2-4fbe-8153-c7a63087bbc3}">
+          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>scbslp_name</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="scbslp_PCF03.PCF03">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">scbslp_name</sampleProperty>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="scbslp_PCF03.PCF03">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">scbslp_name</sampleProperty>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="scbslp_PCF03.PCF03">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">scbslp_name</sampleProperty>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{78578ca5-7641-4fc8-bbe0-b53f68ac8428}">
+          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>scbslp_name</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="scbslp_PCF02.PCF02">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">scbslp_name</sampleProperty>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="scbslp_PCF02.PCF02">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">scbslp_name</sampleProperty>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="scbslp_PCF02.PCF02">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">scbslp_name</sampleProperty>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Sales" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

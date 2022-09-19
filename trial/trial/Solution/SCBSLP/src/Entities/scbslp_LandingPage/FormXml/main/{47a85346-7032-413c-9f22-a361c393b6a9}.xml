@@ -1,0 +1,521 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{47a85346-7032-413c-9f22-a361c393b6a9}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls" shownavigationbar="false">
+      <tabs>
+        <tab verticallayout="true" id="{f40450b5-b450-47eb-b7e0-221e4572ff8a}" IsUserDefined="1" name="Meetings_tasks" visible="true">
+          <labels>
+            <label description="Meetings &amp; Tasks" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{e09e299c-4298-4d17-a26a-30d6653d0a45}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{75e447b9-4069-4576-a9cf-f4dcc2eb01a8}" showlabel="false">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="scbslp_name" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="scbslp_name" uniqueid="{B65AB67E-5A2D-40E1-B483-B205DB713354}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c67b1d72-d161-4e0d-a43a-9a4cb08bf2f0}" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c54a8b61-3146-4e65-a0ce-62711ca1e6da}" locklevel="0" colspan="1" rowspan="1" showlabel="false">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="scbslp_name" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="scbslp_name" disabled="false" uniqueid="{64348b7a-4821-4716-86eb-6a525d4fcc13}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e54ffca8-afe1-42ba-985e-3f9d460c066f}" locklevel="0" colspan="1" rowspan="1" showlabel="false">
+                        <labels>
+                          <label description="Task List Control" languagecode="1033" />
+                        </labels>
+                        <control id="scbslp_name" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="scbslp_name" disabled="false" uniqueid="{08421738-82eb-47bb-a766-d395352f065f}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b356c8d3-2b81-4e42-b1e3-abe0994586ec}" locklevel="0" colspan="1" rowspan="1" showlabel="false">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="scbslp_name" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="scbslp_name" disabled="false" uniqueid="{4DF92547-A2B2-4FBE-8153-C7A63087BBC3}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{441fdf20-a2e0-475d-ae9d-04b30dedeeb3}" colspan="1" rowspan="1" showlabel="false">
+                        <labels>
+                          <label description="Widget11" languagecode="1033" />
+                        </labels>
+                        <control id="scbslp_widget11" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="scbslp_widget11" uniqueid="{ea41601f-6550-4c7c-a32f-53fe638fec45}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="Meetings_tasks_section_6" id="12baf197-5b88-4cec-b054-3f3b0ee7bd94" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Mocking web service (Power Automate)" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{822f8953-bbc4-41a7-9717-c06824370e93}" locklevel="0" colspan="1" rowspan="1" showlabel="false">
+                        <labels>
+                          <label description="displayFlowAPI" languagecode="1033" />
+                        </labels>
+                        <control id="scbslp_displayflowapi" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="scbslp_displayflowapi" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{323cf28c-dacf-49ea-b09f-10680169bf2c}" locklevel="0" colspan="1" rowspan="1" showlabel="false">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="scbslp_name" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="scbslp_name" disabled="false" uniqueid="{399c3ca2-5983-421f-9aa8-abf9582a2895}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="Meetings_tasks_section_5" id="7fa24c60-9a5e-4dcd-91d1-b3b5f409b491" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Embedding PowerBI" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7d18b61c-c588-136c-aee7-03e5e74a09a1}" showlabel="true" rowspan="20" colspan="1" auto="false">
+                        <labels>
+                          <label description="Accounts (Parent Account)" languagecode="1033" />
+                        </labels>
+                        <control id="unfilteredreport" classid="{8C54228C-1B25-4909-A12A-F2B968BB0D62}">
+                          <parameters>
+                            <PowerBIGroupId>00000000-0000-0000-0000-000000000000</PowerBIGroupId>
+                            <PowerBIReportId>7ebc6cca-b42b-4218-96b2-50a79122d31a</PowerBIReportId>
+                            <TileUrl>https://app.powerbi.com/reportEmbed?reportId=7ebc6cca-b42b-4218-96b2-50a79122d31a&amp;autoAuth=true&amp;ctid=35b12240-b774-450e-b764-eb16c497409b</TileUrl>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section name="Meetings_tasks_section_3" id="518384e5-7b82-4b19-9022-71d34974c95b" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Embedding IFrame" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{deec0243-063b-4d70-a53d-022f243160f4}" showlabel="false" rowspan="6" colspan="1">
+                        <labels>
+                          <label description="New Iframe control 1663203540217" languagecode="1033" />
+                        </labels>
+                        <control id="IFRAME_new_1" classid="{FD2A7985-3187-444E-908D-6624B21F69C0}">
+                          <parameters>
+                            <PassParameters>false</PassParameters>
+                            <Security>false</Security>
+                            <Scrolling>auto</Scrolling>
+                            <Border>true</Border>
+                            <Url>https://www.bing.com/?toWww=1&amp;redig=F353DD4872BF454A8A375350CCBD9AC6</Url>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{185724cd-f7ca-48c4-a267-2c86afb3feee}" showlabel="false" rowspan="6" colspan="1">
+                        <labels>
+                          <label description="New Iframe control 1663549797388" languagecode="1033" />
+                        </labels>
+                        <control id="IFRAME_new_2" classid="{FD2A7985-3187-444E-908D-6624B21F69C0}">
+                          <parameters>
+                            <PassParameters>false</PassParameters>
+                            <Security>false</Security>
+                            <Scrolling>auto</Scrolling>
+                            <Border>true</Border>
+                            <Url>https://www.sc.com/en/</Url>
+                          </parameters>
+                        </control>
+                        <events>
+                          <event name="onload" application="false" active="false" />
+                        </events>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section name="Meetings_tasks_section_5" id="c583bf7b-09f2-44ab-95f0-f2b7acedc9eb" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Embedding D365 List View" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{a5bc316a-aa54-490e-bfbd-b83987917d04}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="New editable grid" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="cc_1663271859097" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" uniqueid="{587A4297-0CFB-40D3-8B9D-29FACED4A148}">
+                          <parameters>
+                            <TargetEntityType>contact</TargetEntityType>
+                            <ViewId>{00000000-0000-0000-00AA-000010001003}</ViewId>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <IsUserView>false</IsUserView>
+                            <ViewIds>{00000000-0000-0000-00AA-000010001003}</ViewIds>
+                            <VisualizationId>{E365462F-1DB9-46A8-928D-BEAB1A7A2375}</VisualizationId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="news_insights" id="93d07e0c-2e54-4fd8-bf6f-a41d793c24a5" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="News &amp; Insights" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_3_section_1" id="86eadb4c-8265-45fa-bb29-d8a0fd366828" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows />
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="portfolio_overview" id="f9b4b0e2-084c-4b57-87ae-d10d7217cc1f" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Portfolio Overview" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_4_section_1" id="68f6e4ac-63d4-4116-a126-eea155f0550d" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows />
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="my_widgets" id="c8819fd1-79da-478b-8b65-0300d11a5956" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="My Widgets" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_2_section_1" id="6d04d0f1-e48a-4104-ba95-3d97be2a4c97" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows />
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{00bab0fe-9c6c-4f00-8d5b-e3b263a74ef8}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows />
+      </header>
+      <footer id="{ce83a939-3320-4437-8fbf-d40d9779e6fa}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows />
+      </footer>
+      <controlDescriptions>
+        <controlDescription forControl="{B65AB67E-5A2D-40E1-B483-B205DB713354}">
+          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>scbslp_name</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="scbslp_pcf01.pcf01">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">scbslp_name</sampleProperty>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="scbslp_pcf01.pcf01">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">scbslp_name</sampleProperty>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="scbslp_pcf01.pcf01">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">scbslp_name</sampleProperty>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{4DF92547-A2B2-4FBE-8153-C7A63087BBC3}">
+          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>scbslp_name</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="scbslp_PCF03.PCF03">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">scbslp_name</sampleProperty>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="scbslp_PCF03.PCF03">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">scbslp_name</sampleProperty>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="scbslp_PCF03.PCF03">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">scbslp_name</sampleProperty>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{587A4297-0CFB-40D3-8B9D-29FACED4A148}">
+          <customControl id="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+            <parameters>
+              <TargetEntityType>contact</TargetEntityType>
+              <ViewId>{00000000-0000-0000-00AA-000010001003}</ViewId>
+              <EnableViewPicker>false</EnableViewPicker>
+              <IsUserView>false</IsUserView>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.Grid.GridControl">
+            <parameters>
+              <data-set name="Grid">
+                <TargetEntityType>contact</TargetEntityType>
+                <ViewId>{00000000-0000-0000-00AA-000010001003}</ViewId>
+                <IsUserView>false</IsUserView>
+                <EnableViewPicker>false</EnableViewPicker>
+                <RelationshipName />
+                <FilteredViewIds />
+              </data-set>
+              <EnableGroupBy type="Enum" static="true">yes</EnableGroupBy>
+              <EnableEditing type="Enum" static="true">yes</EnableEditing>
+              <ReflowBehavior type="Enum" static="true">GridOnly</ReflowBehavior>
+              <ListLayoutDirection type="Enum" static="true">Vertical</ListLayoutDirection>
+              <EnableSubGridAutoCollapse type="Enum" static="true">false</EnableSubGridAutoCollapse>
+              <EnableFiltering type="Enum" static="true">yes</EnableFiltering>
+              <HideNestedGridColumnHeader type="Enum" static="true">no</HideNestedGridColumnHeader>
+              <EnableJumpBar type="Enum" static="true">yes</EnableJumpBar>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.Grid.GridControl">
+            <parameters>
+              <data-set name="Grid">
+                <TargetEntityType>contact</TargetEntityType>
+                <ViewId>{00000000-0000-0000-00AA-000010001003}</ViewId>
+                <IsUserView>false</IsUserView>
+                <EnableViewPicker>false</EnableViewPicker>
+                <RelationshipName />
+                <FilteredViewIds />
+              </data-set>
+              <EnableGroupBy type="Enum" static="true">yes</EnableGroupBy>
+              <EnableEditing type="Enum" static="true">yes</EnableEditing>
+              <ReflowBehavior type="Enum" static="true">GridOnly</ReflowBehavior>
+              <ListLayoutDirection type="Enum" static="true">Vertical</ListLayoutDirection>
+              <EnableSubGridAutoCollapse type="Enum" static="true">false</EnableSubGridAutoCollapse>
+              <EnableFiltering type="Enum" static="true">yes</EnableFiltering>
+              <HideNestedGridColumnHeader type="Enum" static="true">no</HideNestedGridColumnHeader>
+              <EnableJumpBar type="Enum" static="true">yes</EnableJumpBar>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.Grid.GridControl">
+            <parameters>
+              <data-set name="Grid">
+                <TargetEntityType>contact</TargetEntityType>
+                <ViewId>{00000000-0000-0000-00AA-000010001003}</ViewId>
+                <IsUserView>false</IsUserView>
+                <EnableViewPicker>false</EnableViewPicker>
+                <RelationshipName />
+                <FilteredViewIds />
+              </data-set>
+              <EnableGroupBy type="Enum" static="true">yes</EnableGroupBy>
+              <EnableEditing type="Enum" static="true">yes</EnableEditing>
+              <ReflowBehavior type="Enum" static="true">GridOnly</ReflowBehavior>
+              <ListLayoutDirection type="Enum" static="true">Vertical</ListLayoutDirection>
+              <EnableSubGridAutoCollapse type="Enum" static="true">false</EnableSubGridAutoCollapse>
+              <EnableFiltering type="Enum" static="true">yes</EnableFiltering>
+              <HideNestedGridColumnHeader type="Enum" static="true">no</HideNestedGridColumnHeader>
+              <EnableJumpBar type="Enum" static="true">yes</EnableJumpBar>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{399c3ca2-5983-421f-9aa8-abf9582a2895}">
+          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>scbslp_name</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="scbslp_callFlowAPI.callFlowAPI">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">scbslp_name</sampleProperty>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="scbslp_callFlowAPI.callFlowAPI">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">scbslp_name</sampleProperty>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="scbslp_callFlowAPI.callFlowAPI">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">scbslp_name</sampleProperty>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{ea41601f-6550-4c7c-a32f-53fe638fec45}">
+          <customControl id="{E0DECE4B-6FC8-4A8F-A065-082708572369}">
+            <parameters>
+              <datafieldname>scbslp_widget11</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="scbslp_TrialNamespace.Trial">
+            <parameters>
+              <widget02Property type="Multiple">scbslp_widget11</widget02Property>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="scbslp_TrialNamespace.Trial">
+            <parameters>
+              <widget02Property type="Multiple">scbslp_widget11</widget02Property>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="scbslp_TrialNamespace.Trial">
+            <parameters>
+              <widget02Property type="Multiple">scbslp_widget11</widget02Property>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{64348b7a-4821-4716-86eb-6a525d4fcc13}">
+          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>scbslp_name</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="scbslp_PCF02.PCF02">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">scbslp_name</sampleProperty>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="scbslp_PCF02.PCF02">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">scbslp_name</sampleProperty>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="scbslp_PCF02.PCF02">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">scbslp_name</sampleProperty>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{08421738-82eb-47bb-a766-d395352f065f}">
+          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>scbslp_name</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" formFactor="0">
+            <parameters>
+              <datafieldname>scbslp_name</datafieldname>
+              <datafieldname>scbslp_name</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" formFactor="1">
+            <parameters>
+              <datafieldname>scbslp_name</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="scbslp_slp.MyTaskList">
+            <parameters>
+              <sampleProperty>scbslp_name</sampleProperty>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+      <Navigation>
+        <NavBar />
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <DisplayConditions FallbackForm="true" Order="0">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Generic" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>
