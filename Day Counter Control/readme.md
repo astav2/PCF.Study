@@ -1,4 +1,4 @@
-Day Counter Control 
+Day Counter Control: https://github.com/astav2/PCF.Study/tree/master/Day%20Counter%20Control
 
 Demo
 ![](https://github.com/astav2/PCF.Study/blob/master/Day%20Counter%20Control/DayCounterControl/Day%20Counter%20Demo.gif)
