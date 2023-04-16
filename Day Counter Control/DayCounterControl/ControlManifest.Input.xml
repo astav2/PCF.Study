@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest>
   <control namespace="dksk" constructor="DayCounterControl" version="0.0.21" display-name-key="DayCounterControl" description-key="DayCounterControl description" control-type="standard">
-    <property name="StartDate" display-name-key="StartDate" description-key="StartDate" usage="input" required="false" of-type-group="DateGroup" />
     <property name="EndDate" display-name-key="EndDate" description-key="EndDate" usage="bound" required="true" of-type-group="DateGroup" />
     <property name="showHours" display-name-key="showHours" description-key="showHours" usage="input" required="true" of-type="Enum">
       <value name="Yes" display-name-key="Yes">0</value>
