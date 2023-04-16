@@ -53,14 +53,14 @@ export class DayCounterControl implements ComponentFramework.StandardControl<IIn
         const props:Iprops={
             context:context,
             endDateTime:context.parameters.EndDate.raw?.getTime()||0,       
-            showHours:context.parameters.showHours.raw,
-            showMinutes:context.parameters.showMinutes.raw,
-            showSeconds:context.parameters.showSeconds.raw,
+            showHours:context.parameters.showHours.raw==="0",
+            showMinutes:context.parameters.showMinutes.raw==="0",
+            showSeconds:context.parameters.showSeconds.raw==="0",
             initialColour:context.parameters.InitialColor.raw||"#006DFF",
             warningColour:context.parameters.WarningColor.raw||"#EC0051" ,
             AlertDays:context.parameters.AlertmeDays.raw||10,
             NotifyOutputChanged:()=>{this.Notify()} ,
-            NeedAnimation:context.parameters.runAnimation.raw?? false      
+            NeedAnimation:context.parameters.runAnimation.raw==="0"      
           }
           this.Render(props);
           this.Notify();

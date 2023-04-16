@@ -31,7 +31,7 @@ const renderTime = (dimension: string, time: number) => {
 };
 
 export default function renderDate(props: Iprops) {
-  const [endDateTimeState, updateEndDateTime] = React.useState(props.endDateTime);
+  
 
   const timerProps = {
     isPlaying: props.NeedAnimation,
@@ -46,7 +46,7 @@ export default function renderDate(props: Iprops) {
   const daySeconds = 86400;
   const stratTime = Date.now() / 1000; // use UNIX timestamp in seconds
   let endTime = Math.floor(
-    endDateTimeState / 1000
+    props.endDateTime / 1000
   );
   const remainingTime = endTime - stratTime;
   const days = Math.ceil(remainingTime / daySeconds);
