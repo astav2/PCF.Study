@@ -15,6 +15,10 @@
 |AlertmeDays| give a threshold number below which the colour of widget changes from initial colour to warning colour| input| true| Whole.None| N/A|
 |runAnimation| keep Yes to see seconds animation. False to put static.Negative dates are reflected only if you set this property as false| input| false| Enum| Yes (0)| No (1)|
 
+Sample Config snips:
+![](https://github.com/astav2/PCF.Study/blob/master/Day%20Counter%20Control/DayCounterControl/Resources/day%20only%20config%20values.png)
+![](https://github.com/astav2/PCF.Study/blob/master/Day%20Counter%20Control/DayCounterControl/Resources/day%20only%20%20config%202.png)
+
 **Release files**:
 Please download the managed solution from here 
 https://github.com/astav2/PCF.Study/releases/tag/v1.0.0
