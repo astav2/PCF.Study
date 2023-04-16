@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+  <control namespace="dksk" constructor="DayCounterControl" version="0.0.19" display-name-key="DayCounterControl" description-key="DayCounterControl description" control-type="standard">
+    <property name="StartDate" display-name-key="StartDate" description-key="StartDate" usage="input" required="false" of-type-group="DateGroup" />
+    <property name="EndDate" display-name-key="EndDate" description-key="EndDate" usage="bound" required="true" of-type-group="DateGroup" />
+    <property name="showHours" display-name-key="showHours" description-key="showHours" usage="input" required="true" of-type="TwoOptions">
+      <value name="No" display-name-key="Yes">0</value>
+      <value name="Yes" display-name-key="No">1</value>
+    </property>
+    <property name="showMinutes" display-name-key="showMinutes" description-key="showMinutes" usage="input" required="true" of-type="TwoOptions">
+      <value name="No" display-name-key="Yes">0</value>
+      <value name="Yes" display-name-key="No">1</value>
+    </property>
+    <property name="showSeconds" display-name-key="showSeconds" description-key="showSeconds" usage="input" required="true" of-type="TwoOptions">
+      <value name="No" display-name-key="Yes">0</value>
+      <value name="Yes" display-name-key="No">1</value>
+    </property>
+    <property name="InitialColor" display-name-key="InitialColor" description-key="indicates a postive colour range for the widget. use hex colour code. e.g&quot;#006DFF&quot;" usage="input" required="false" of-type="SingleLine.Text" />
+    <property name="WarningColor" display-name-key="WarningColor" description-key="acts as alerting color. changes with days nearing end date. use hex colour formet. eg&quot;#006DFF&quot;" usage="input" required="false" of-type="SingleLine.Text" />
+    <property name="AlertmeDays" display-name-key="AlertmeDays" description-key="give a threshold number below which the colour of widget changes from initial colour to warning colour " usage="input" required="true" of-type="Whole.None" />
+    <type-group name="DateGroup">
+      <type>DateAndTime.DateAndTime</type>
+      <type>DateAndTime.DateOnly</type>
+    </type-group>
+    <resources>
+      <code path="index.ts" order="1" />
+      <css path="./style.css" order="2" />
+    </resources>
+    <property name="runAnimation" display-name-key="runAnimation" description-key="runAnimation" usage="input" required="false" of-type="TwoOptions" />
+  </control>
+</manifest>
