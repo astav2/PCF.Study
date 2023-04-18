@@ -25,5 +25,4 @@ https://github.com/astav2/PCF.Study/releases/tag/v1.0.0
 
 
 Dev Ref:
-	react-countdown-circle-timer/packages/web at master · vydimitrov/react-countdown-circle-timer (github.com)
-![image](https://user-images.githubusercontent.com/104415745/232296208-b3ffc604-1a58-417c-b0d8-188c2d36a736.png)
+https://github.com/vydimitrov/react-countdown-circle-timer/tree/master/packages/web#react-countdown-circle-timer
